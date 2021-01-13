@@ -1,6 +1,7 @@
 import CommandContext from '../Interfaces/CommandContext'
+import Context from '../Types/Command'
 
-function Command<R>({ name, description, tag, alias, roles }: CommandContext<R>) {
+function Command<R>({ name, description, tag, alias, roles }: Context<R>) {
 	return function (constructor: Function) {
 		constructor.prototype.name = name
 		constructor.prototype.description = description

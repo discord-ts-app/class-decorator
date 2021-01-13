@@ -1,7 +1,3 @@
-import Events from '../Enums/Events'
-
-type EventContext = {
-	type: Events
+export default interface EventContext {
+	run(...params: any): Promise<void>
 }
-
-export default EventContext

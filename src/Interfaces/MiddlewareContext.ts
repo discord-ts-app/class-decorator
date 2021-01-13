@@ -1,7 +1,3 @@
-import Lifecycles from './../Enums/Lifecycles'
-
-type MiddlewareContext = {
-	lifecycle: Lifecycles
+export default interface MiddlewareContext {
+	run(params?: any): Promise<void>
 }
-
-export default MiddlewareContext

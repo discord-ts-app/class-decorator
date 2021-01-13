@@ -1,9 +1,5 @@
-type CommandContext<R> = {
-	name: string
-	description: string
-	tag: string
-	alias?: Array<string>
-	roles?: Array<R>
-}
+import { Message } from 'discord.js'
 
-export default CommandContext
+export default interface CommandContext {
+	run(message: Message, args: Array<string>): Promise<void>
+}
