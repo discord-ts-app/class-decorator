@@ -10,4 +10,4 @@ function Command<R>({ name, description, tag, alias, roles }: CommandContext<R>)
 	}
 }
 
-export default Command
+export { Command, CommandContext }

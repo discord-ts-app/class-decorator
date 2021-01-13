@@ -8,4 +8,4 @@ function Middleware({ lifecycle }: MiddlewareContext) {
 	}
 }
 
-export { Middleware, Lifecycles }
+export { Middleware, Lifecycles, MiddlewareContext }
