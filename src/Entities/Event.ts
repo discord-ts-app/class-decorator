@@ -1,4 +1,4 @@
-import Events from '../Enums/Events'
+import Events from '../Types/Events'
 import EventContext from '../Interfaces/EventContext'
 
 function Event(type: Events) {
